@@ -97,7 +97,6 @@ export default function Home() {
         </div>
       </section>
 
-    {/* CTABanner Section */}
       <CTABanner />
 
       {/* Categories Section */}
