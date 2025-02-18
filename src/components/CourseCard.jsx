@@ -1,6 +1,12 @@
-export default function CourseCard({ title, duration, difficulty, image, enrolled, rating }) {
+import { Link } from 'react-router-dom';
+
+export default function CourseCard({ id, title, duration, difficulty, image, enrolled, rating }) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col">
+    <Link 
+      to={`/courses/${id}`} 
+      className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
+      aria-label={`View ${title} course details`}
+    >
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4 flex-grow">
         <div className="flex justify-between items-start mb-2">
@@ -26,10 +32,10 @@ export default function CourseCard({ title, duration, difficulty, image, enrolle
           </div>
         </div>
 
-        <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors duration-300">
-          Enroll Now
-        </button>
+        <div className="w-full bg-blue-600 text-white py-2 rounded-md text-center">
+          View Course
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

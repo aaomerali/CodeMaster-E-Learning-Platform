@@ -8,24 +8,48 @@ import CTABanner from '../components/CTABanner';
 
 const courses = [
   {
-    title: 'React Fundamentals',
-    duration: '6 hours',
-    image: 'https://picsum.photos/400/300?random=1'
-  },
-  {
-    title: 'Python for Beginners',
+    id: 1,
+    title: 'Complete React Guide',
+    category: 'web-development',
+    difficulty: 'Intermediate',
     duration: '8 hours',
-    image: 'https://picsum.photos/400/300?random=2'
+    enrolledStudents: 1500,
+    rating: 4.8,
+    dateAdded: '2023-08-15',
+    image: 'https://picsum.photos/400/300?random=5'
   },
   {
-    title: 'JavaScript Masterclass',
+    id: 2,
+    title: 'Python for Data Science',
+    category: 'data-science',
+    difficulty: 'Beginner',
     duration: '10 hours',
-    image: 'https://picsum.photos/400/300?random=3'
+    enrolledStudents: 2500,
+    rating: 4.7,
+    dateAdded: '2023-07-22',
+    image: 'https://picsum.photos/400/300?random=6'
   },
   {
-    title: 'Web Development Basics',
+    id: 3,
+    title: 'Mastering CSS Grid and Flexbox',
+    category: 'web-development',
+    difficulty: 'Intermediate',
+    duration: '5 hours',
+    enrolledStudents: 1800,
+    rating: 4.9,
+    dateAdded: '2023-09-10',
+    image: 'https://picsum.photos/400/300?random=7'
+  },
+  {
+    id: 4,
+    title: 'Intro to Machine Learning',
+    category: 'data-science',
+    difficulty: 'Advanced',
     duration: '12 hours',
-    image: 'https://picsum.photos/400/300?random=4'
+    enrolledStudents: 900,
+    rating: 4.6,
+    dateAdded: '2023-06-05',
+    image: 'https://picsum.photos/400/300?random=8'
   }
 ];
 
