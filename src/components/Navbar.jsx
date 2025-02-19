@@ -14,8 +14,8 @@ export default function Navbar() {
             <Link to="/courses" className="text-gray-600 hover:text-blue-600">
               Courses
             </Link>
-            <Link to="/about" className="text-gray-600 hover:text-blue-600">
-              About
+            <Link to="/categories" className="text-gray-600 hover:text-blue-600">
+              Categories
             </Link>
             <Link
               to="/signup"

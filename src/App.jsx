@@ -4,7 +4,9 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import CoursesListing from './components/CoursesListing';
 import CoursesPage from './pages/CoursesPage';
-import CourseDetailsPage from './components/CourseDetailsPage';
+import CourseDetailsPage from './pages/CourseDetailsPage';
+import CategoriesPage from './pages/CategoriesPage';
+
 
 
 export default function App() {
@@ -18,6 +20,7 @@ export default function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/courses/category/:category" element={<CoursesPage />} />
           <Route path="/courses/:courseId" element={<CourseDetailsPage />} />
+          <Route path="/categories" element={<CategoriesPage />} /> 
         </Routes>
         </main>
         <Footer />

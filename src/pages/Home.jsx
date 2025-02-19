@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
 import FeatureCard from '../components/FeatureCard';
 import CourseCard from '../components/CourseCard';
-import CategoryCard from '../components/CategoryCard';
+import Categories from '../components/Categories';
 import HowItWorks from '../components/HowItWorks';
 import CTABanner from '../components/CTABanner';
 
@@ -129,7 +129,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">Popular Categories</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {categories.map((category, index) => (
-              <CategoryCard key={index} {...category} />
+              <Categories key={index} {...category} />
             ))}
           </div>
         </div>

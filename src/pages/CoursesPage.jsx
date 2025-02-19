@@ -117,6 +117,12 @@ export default function CoursesPage() {
 
   useEffect(() => {
     let results = [...allCourses];
+    
+    if (category && category !== 'all') {
+      results = results.filter(course => 
+        course.category === category
+      );
+    }
 
     // Category filter
     if (filters.category !== 'all') {
@@ -168,7 +174,10 @@ export default function CoursesPage() {
   return (
     <section className="py-16 bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8">All Courses</h1>
+        
+        <h2 className="text-3xl font-bold capitalize mb-8">
+          {category ? `${category.replace('-', ' ')} Courses` : 'All Courses'}
+        </h2>
         
         {/* Filters Section */}
         <div className="bg-white p-6 rounded-lg shadow-md mb-8">
